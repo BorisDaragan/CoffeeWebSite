@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Coffee website</title>
+    <script type="text/javascript" src="../JavaScript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul ").css({ display: "none" }); // Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="Css/StyleSheet.css" />
+</head>
+<body>
+     <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+        </div>
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="~/Pages/Home.aspx" runat="server">Home</a></li>
+
+                <li><a href="~/Pages/Coffee.aspx" runat="server">Coffee</a></li>
+                <li><a href="~/Pages/Coffee_Overview.aspx" runat="server">Management</a>
+                    <ul>
+                        <li><a href="~/Pages/Coffee_Overview.aspx" runat="server">Coffee Overview</a></li>
+                        <li><a href="~/Pages/Account/Admin.aspx" runat="server">Users</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="Login" align="right">
+                <asp:Label ID="lblLogin" runat="server" ForeColor="White" Text=""></asp:Label>
+                <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" Text="" OnClick="LinkButton1_Click" CausesValidation="False"></asp:LinkButton>
+               
+
+            </div>
+        </div>
+        <div id="content_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="sidebar">
+        </div>
+        <div id="footer">
+            <p>All Rights reserved.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
