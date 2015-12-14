@@ -32,12 +32,13 @@
         <div id="navigation">
             <ul id="nav">
                 <li><a href="~/Pages/Home.aspx" runat="server">Home</a></li>
-
-                 <li><a href="~/Pages/Coffee.aspx" runat="server">Coffee</a></li>
+                <li><a href="~/Pages/Coffee.aspx" runat="server">Coffee</a></li>
+                <li><a href="~/Pages/Shop.aspx" runat="server">Shop</a></li>
                 <li><a href="~/Pages/Coffee_Overview.aspx" runat="server">Management</a>
                     <ul>
                         <li><a href="~/Pages/Coffee_Overview.aspx" runat="server">Coffee Overview</a></li>
                         <li><a href="~/Pages/Account/Admin.aspx" runat="server">Users</a></li>
+                        <li><a href="~/Pages/Orders.aspx" runat="server">Orders</a></li>
                     </ul>
                 </li>
             </ul>

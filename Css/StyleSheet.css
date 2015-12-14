@@ -38,6 +38,7 @@ body p
 
 #sidebar
 {
+    background: url('../Images/YourAddCouldBeHere.jpg') 50% 50% no-repeat;
     float: right;
     width: 250px;
     height: 400px;
@@ -150,4 +151,62 @@ body p
     padding: 0px 10px 10px 10px;
     height: 150px;
     width: 150px;
+}
+
+#ContentPlaceHolder1_pnlProducts div 
+{
+    float: left;
+    width: 250px;
+    height: 250px;
+}
+
+.ProductsName 
+{
+    margin: 0px 5px 5px 0px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+}
+
+.ProductsPrice 
+{
+    margin: 0px 5px 5px 0px;
+    width: 150px;
+    color: orange;
+}
+
+.ProductsImage 
+{
+    width: 150px;
+    height: 150px;
+    vertical-align: central;
+    padding: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#LinkButton1 
+{
+    margin-right: 20px;
+}
+#lblLogin 
+{
+    margin-right: 20px;
+}
+
+.orderTable
+{
+    width: 500px;
+    height: auto;
+    margin: 10px;
+}
+
+.orderTable td
+{
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
 }
